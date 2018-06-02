@@ -39,7 +39,7 @@ func hook(c *gin.Context) {
 	directory = "/" + directory
 
 	// go to directory and find hastehook file
-	fileHandle, _ := os.Open(directory + "/hastehook")
+	fileHandle, _ := os.Open(directory + "/deployscript")
 	defer fileHandle.Close()
 	fileScanner := bufio.NewScanner(fileHandle)
 
