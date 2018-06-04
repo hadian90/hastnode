@@ -25,7 +25,7 @@ func main() {
 
 	r.POST("/hook/:directory", hook)
 
-	r.Run(":5000")
+	r.Run(":5005")
 }
 
 func hook(c *gin.Context) {
