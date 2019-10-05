@@ -18,6 +18,7 @@ func check(e error) {
 }
 
 func main() {
+	fmt.Printf("running...")
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 
